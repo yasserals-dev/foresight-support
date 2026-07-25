@@ -352,7 +352,11 @@
         </div>
     </div>
     <script>
-        var currentLang = localStorage.getItem('foresight_lang') || 'en';
+        // A `?lang=` param (set when the app opens this page) takes priority
+        // over the stored preference, so the site opens in whatever language
+        // the app is currently set to rather than a stale local choice.
+        var urlLang = new URLSearchParams(window.location.search).get('lang');
+        var currentLang = (urlLang === 'en' || urlLang === 'ar') ? urlLang : (localStorage.getItem('foresight_lang') || 'en');
 
         function applyLanguage(lang) {
             currentLang = lang;
