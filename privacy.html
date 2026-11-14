@@ -89,7 +89,7 @@
         <div class="header">
             <div class="logo"><img src="./icon.png?v=4" alt="Foresight icon"></div>
             <h1 id="pageTitle">Privacy Policy</h1>
-            <p class="updated" id="lastUpdated">Last Updated: November 7, 2026</p>
+            <p class="updated" id="lastUpdated">Last Updated: November 14, 2026</p>
         </div>
 
         <div id="content-en">
@@ -122,6 +122,7 @@
                 <li>App version and crash logs (used to diagnose and fix errors)</li>
                 <li>General usage timestamps (e.g., when you sign in)</li>
                 <li>In-app usage events — which screens and features you use and when you open the app — collected for us by our analytics provider, PostHog, to understand how the app is used and improve it. These events never include the financial values you enter.</li>
+                <li>Notification address: if you allow notifications and keep Push Notifications on in Settings, we store a random address for your phone, issued through Apple and Expo, together with your app language. It is not linked to your name or email, and it is stored even if you have not created an account. We use it only to send you check-in reminders and occasional news about the app. Turning Push Notifications off deletes it.</li>
             </ul>
             <p>Our usage analytics and crash reports are processed by PostHog on our behalf and stored on servers in the European Union, and are used solely to improve the app. Each installation is identified by a random ID. When you sign in, that ID is linked to a random account ID, never to your email address or name. We turn off location lookup from IP address, screen recording and automatic touch tracking. We do not use third-party advertising SDKs, we do not build advertising profiles, and we do not track you across other apps or websites. We do not collect your location, contacts, or any data beyond what is listed above.</p>
 
@@ -236,6 +237,7 @@
                 <li>إصدار التطبيق وسجلات الأعطال (لتشخيص الأخطاء وإصلاحها)</li>
                 <li>طوابع زمنية عامة للاستخدام (مثل وقت تسجيل الدخول)</li>
                 <li>أحداث استخدام داخل التطبيق — الشاشات والميزات التي تستخدمها ووقت فتحك للتطبيق — يجمعها لنا مزوّد التحليلات PostHog لفهم كيفية استخدام التطبيق وتحسينه (لا تتضمن أبداً القيم المالية التي تدخلها)</li>
+                <li>عنوان الإشعارات: إذا سمحت بالإشعارات وأبقيت خيار «الإشعارات» مفعّلًا في الإعدادات، نحفظ عنوانًا عشوائيًا لهاتفك تصدره Apple و Expo، مع لغة التطبيق. لا يرتبط باسمك أو بريدك الإلكتروني، ويُحفظ حتى لو لم تُنشئ حسابًا. نستخدمه فقط لإرسال تذكيرات المتابعة المالية وأخبار عن التطبيق بين حين وآخر. إيقاف الإشعارات يحذفه.</li>
             </ul>
             <p>تُعالَج تحليلات الاستخدام وتقارير الأعطال لدينا بواسطة PostHog نيابةً عنا، وتُخزَّن على خوادم داخل الاتحاد الأوروبي، وتُستخدم حصرياً لتحسين التطبيق. يُعرَّف كل تثبيت للتطبيق برقم عشوائي، وعند تسجيل دخولك يُربط هذا الرقم برقم حساب عشوائي، ولا يُربط أبداً ببريدك الإلكتروني أو اسمك. نوقف تحديد الموقع من عنوان IP وتسجيل الشاشة والتتبع التلقائي للمسات. لا نستخدم أدوات إعلان خارجية، ولا نبني ملفات إعلانية، ولا نتتبعك عبر التطبيقات أو المواقع الأخرى. لا نجمع موقعك أو جهات اتصالك أو أي بيانات تتجاوز ما ذُكر أعلاه.</p>
 
@@ -347,7 +349,7 @@
             document.getElementById('content-ar').style.display = lang === 'ar' ? 'block' : 'none';
 
             document.getElementById('pageTitle').textContent = lang === 'en' ? 'Privacy Policy' : 'سياسة الخصوصية';
-            document.getElementById('lastUpdated').textContent = lang === 'en' ? 'Last Updated: November 7, 2026' : 'آخر تحديث: 7 نوفمبر 2026';
+            document.getElementById('lastUpdated').textContent = lang === 'en' ? 'Last Updated: November 14, 2026' : 'آخر تحديث: 14 نوفمبر 2026';
             document.getElementById('backLink').innerHTML = lang === 'en' ? '&larr; Back to Home' : 'العودة للرئيسية &rarr;';
             document.getElementById('footerText').innerHTML = lang === 'en' ? '&copy; 2026 Foresight. All rights reserved.' : '&copy; 2026 Foresight. جميع الحقوق محفوظة.';
             document.title = lang === 'en' ? 'Privacy Policy - Foresight' : 'سياسة الخصوصية - Foresight';
